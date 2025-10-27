@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>A website</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+	
+	<link rel="stylesheet" href="css/layout.css" />
+    <!-- Source of icon for instagram and facebook -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
+include a style for these classes you should remove the class from your html file //-->
+<body>
+
+<!--REMOVE ANY CLASS OBJECT WHICH YOU DO NOT USE TO STYLE YOUR FILE//-->
+
+    <main class= "main-style">
+	 <header class="page-header"> <!-- Header is semantic block of the page or section title. Contains logo, navigation, headings. -->
+            <div class="header-content">  <!-- Div is universal “container”, without semantics.Groups elements for styling.-->
+                <h1>Nazarii Heiko</h1>
+                <p>To infinity and beyond</p>
+            </div>
+        </header>
+	    <!-- You could style Main here if you wish-->
+        <nav class="page-nav"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+       
+    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about" class="about-me container">  <!--What does the section do here?  Replace this comment with a brief explanation. -->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <div class="content">
+                    <!-- add your 150 word maximum About Me content here.  Use HTML you know, marks for the HTML.  Marks deducted for poor grammar, spelling errors etc. -->
+                    <p>
+                        Hi. I'm Nazarii Heiko, DCU computer science student. I chose this course because I like computers and mathematics, and I had no idea what to study after school.
+                        I like to spend my time playing computer games, doing sports, watching cartoons.
+                     </p>
+                     <p>
+                        My favorite quote:
+                        <q>
+                            There is some good in this world, and it's worth fighting for. — J.R.R. Tolkien, The Two Towers
+                        </q>
+                    </p>
+                    <p>
+                        <strong>Follow me:</strong>
+                        <br>
+                        <a href="https://www.instagram.com/nazariy_ko" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/nazar.geyko.9" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <div class="content">
+                    <!-- add your 200 word maximum work experience content here.  You can use lists of things as well as paragraphs.  Show off the HTML you know.  marks for the HTML, and how well you use it. marks deducted for poor grammar or spelling errors-->
+                     <table border="1" cellpadding="5" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Junior .NET Developer — EPAM Systems</td>
+                            <td>2024-2025</td>
+                            <td>Developed web applications using ASP.NET Core, created REST APIs, optimized performance.</td>
+                        </tr>
+                        <tr>
+                            <td>Trainee Developer — TechLab</td>
+                            <td>2023-2024</td>
+                            <td>Maintained existing systems, wrote unit tests, and fixed bugs.</td>
+                        </tr>
+                        <tr>
+                            <td>Computer technician</td>
+                            <td>2022-2023</td>
+                            <td>Assembled computers, replaced components, consulted customers</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+				<br><br>
+
+        <section id="images" class="image-gallery container">
+		
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div class="content">
+				
+<figure class="an-image">
+  <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+   <img src="https://www.dcu.ie/sites/default/files/styles/user_defined/public/staff/2024-12/polaris-exterior-2th-dec-2024_38-resized.jpg.webp?itok=yq2T9nB4" alt="DCU Polaris Building">
+     <figcaption class="image-caption">DCU Polaris Building</figcaption>
+</figure>                   
+
+<figure class="an-image">
+ <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+  <img src="images/Londis.jpeg" alt="Londis">
+    <figcaption class="image-caption">Londis store</figcaption>
+</figure> 
+
+<figure class="an-image">
+ <!-- add image one here with 150 word maximum caption.  You may remove the caption if you wish.  Don't forget to use alt tags. -->
+  <img src="images/Ubuilding.jpg" alt="U-building">
+   <figcaption class="image-caption">DCU U-building</figcaption>
+</figure> 
+				
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form action="https://formspree.io/[your email address goes here]" method="post">
+	                    <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name" />
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="send my message" /> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer id = "footer-layout">
+              <p> &copy; <a href="dcu.ie/">DCU 2023-2024</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Nazarii Heiko</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text">This is student coursework</span> 
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Lecturer<a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/></span> 
+			</p>
+        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+         
+        </footer>
+    </main>
+</body>
+
+</html>
