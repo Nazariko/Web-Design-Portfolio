@@ -1,11 +1,154 @@
 /* These are some suggested groupings for your stylesheet... */
 
+/* boxes, containers */
+body {
+  background-color: green;
+  font-family: Arial, sans-serif;
+  color: white; 
+  padding: 10px;
+}
 
-/* box sizing */
+main{
+  background-color: black;
+  max-width: 1400px;           /* limits the width */
+  margin: 0 auto;             
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
 
+.header-content{
+    text-align: center;
+    background-image: url("../images/matrix.jpg");
+    width: 300px;
+    height: fit-content;
+    margin: auto;
+}
 
+figure{
+    display: inline-block;
+}
+
+.container {
+  padding: 3rem 1rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  background: gray;
+  margin-bottom: 2rem;
+  border-radius: 12px;    /* make the corners rounded*/
+}
+
+footer{
+    border-top-color: gray;     /*set color for the top border (I don't have bottom at all)*/
+    border-top-style:groove;      /*set style for the top border*/
+    text-align: right;
+}
 /* element styling (e.g. standard p, h1, h2, a, etc) */
 
+h2{
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-shadow: 3px  3px black;      /*create a shadow effect on bottom and right side*/
+}
+
+a{
+    text-decoration: none;            /*remove decoration, the link is not underlined*/
+}
+
+th{
+    color: black;
+    font-weight:bold;
+}
+
+.page-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap:10px;                          /*set distance(gap) between elements*/
+}
+
+.page-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* only work when hovering over */
+/* the link will be underlened if put cursor on it */
+a:hover{
+    text-decoration: underline;
+}
+
+.page-nav a:hover{
+    color: green;
+}
+
+figure img{
+    height:200px;
+    border-radius: 10px;
+}
+
+figure img:hover{
+    transform: scale(1.15);                  /*make image bigger if hover it*/
+}
+
+.image-caption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+form p {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  resize: vertical;             /* allows to change the height*/
+}
+
+input[type="submit"] {
+  color: black;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;                  /*change the cursor*/
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input[type="submit"]:hover {
+  background: green;
+  transform: translateY(-2px);          /*move button up*/
+  color: white;
+}
 
 /* flexible content images code */
 
